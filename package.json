@@ -1,0 +1,20 @@
+{
+  "name": "sgt-react",
+  "version": "1.0.0",
+  "description": "The Student Grade Table is a dynamic web application for teachers who want to record the grades of their students.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mason-keiser/sgt-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mason-keiser/sgt-react/issues"
+  },
+  "homepage": "https://github.com/mason-keiser/sgt-react#readme"
+}
