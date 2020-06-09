@@ -6,21 +6,27 @@
     border: black 3px solid;
     background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(40, 36, 250));
     box-shadow: -5px 5px 8px grey;
+    color: black;
 }
 
-span{
-    background-color: white;
+h1 {
+    font-size: 50px;
+    padding-top: 10px;
+}
+
+.average{
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(189, 182, 182));
     border-radius: 14%;
-    width: 30px;
-    height: 20px;
     margin-left: 20px;
     border: black 3px solid;
+    color: black;
 }
 
 table{
     border: 3px solid black;
     margin-top: 20px;
     box-shadow: -6px 6px 8px grey;
+    color: black
 }
 
 .table-striped>tbody>tr:nth-child(odd)>td, 
