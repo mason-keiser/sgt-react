@@ -4,7 +4,7 @@
     justify-content: space-evenly;
     align-items: baseline;
     border: black 3px solid;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(40, 36, 250));
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(189, 182, 182));
     box-shadow: -5px 5px 8px grey;
     color: black;
 }
@@ -15,15 +15,15 @@ h1 {
 }
 
 .average{
-    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(189, 182, 182));
-    border-radius: 14%;
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(165, 160, 160));
     margin-left: 20px;
     border: black 3px solid;
     color: black;
 }
 
 table{
-    border: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
     margin-top: 20px;
     box-shadow: -6px 6px 8px grey;
     color: black
@@ -32,4 +32,31 @@ table{
 .table-striped>tbody>tr:nth-child(odd)>td, 
 .table-striped>tbody>tr:nth-child(odd)>th {
     background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(189, 182, 182));
+ }
+
+ .gradeTable {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .formContainer {
+     margin-left: 20px;
+     border: 3px solid black;
+     box-shadow: -6px 6px 8px grey;
+     padding: 20px 20px 4px 20px;
+     background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(189, 182, 182));
+ }
+
+ .addButton{
+    background-image: linear-gradient(to right,green , blue);
+    color: white;
+    margin-left: 10px;
+
+ }
+
+ .resetButton{
+    background-image: linear-gradient(to right, orange ,red);
+    color: white;
  }

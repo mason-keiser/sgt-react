@@ -5,7 +5,7 @@ class Header extends React.Component{
         return (
             <div className = 'headerContainer'>
                 <h1 className= 'title'>Student Grade Table</h1>
-        <h2 className= 'gradeAvg'>Average Grade: <span className='average'>{this.props.average}</span></h2>
+                <h3 className= 'gradeAvg'>Average Grade: <span className='average'>{this.props.average}</span></h3>
             </div>
         );
     }
