@@ -34,29 +34,32 @@ table{
     background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(189, 182, 182));
  }
 
- .gradeTable {
+ .componentContainer {
      display: flex;
      flex-direction: row;
      justify-content: space-between;
-     align-items: center;
+     align-items: top;
  }
 
  .formContainer {
      margin-left: 20px;
+     margin-top: 20px;
+     height: 350px;
      border: 3px solid black;
      box-shadow: -6px 6px 8px grey;
-     padding: 20px 20px 4px 20px;
+     padding: 30px 20px 4px 20px;
      background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(189, 182, 182));
  }
 
  .addButton{
     background-image: linear-gradient(to right,green , blue);
     color: white;
-    margin-left: 10px;
-
+    margin-left: 25px;
+    margin-top: 30px;
  }
 
  .resetButton{
     background-image: linear-gradient(to right, orange ,red);
     color: white;
+    margin-top: 30px;
  }

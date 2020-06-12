@@ -8,51 +8,35 @@ export default class GradeForm extends React.Component {
             course: '',
             name: ''
         }
-        this.handleNewName = this.handleNewName.bind(this);
-        this.handleNewCourse = this.handleNewCourse.bind(this);
-        this.handleNewGrade = this.handleNewGrade.bind(this);
+        this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleReset = this.handleReset.bind(this);
     }
 
-    handleNewName() {
-        this.setState({
-            course: this.state.grade.course,
-            name: event.target.value,
-            grade: this.state.grade.grade
-        });
-      }
-    
-    handleNewCourse() {
-        this.setState({
-            course: event.target.value,
-            name: this.state.grade.name,
-            grade: this.state.grade.grade
-        });
-      }
-    
-    handleNewGrade() {
-        this.setState({
-            course: this.state.grade.course,
-            name: this.state.grade.name,
-            grade: Number(event.target.value)
-        });
+    handleChange(event) {
+      this.setState({ [event.target.name]: event.target.value });
     }
-    
+
+    handleReset(event) {
+      this.setState({
+        name: '',
+        course: '',
+        grade: ''
+      });
+    }
+  
     handleSubmit(event) {
-        const newGrade = this.state.grade;
-        this.props.onSubmit(newGrade);
-        event.preventDefault();
+      event.preventDefault();
+      this.props.addGrade(
+        {
+          name: this.state.name,
+          course: this.state.course,
+          grade: Number(this.state.grade)
+        }
+      );
+      this.handleReset();
     }
-    
-      handleReset() {
-        event.preventDefault();
-        this.setState({
-          name: null,
-          course: null,
-          grade: null
-        });
-    }
-    
+
     render(){
         return (
           <div className='formContainer'>
@@ -63,26 +47,25 @@ export default class GradeForm extends React.Component {
               <div className='input-group-prepend'>
                 <span className ='input-group-text'><i className='fas fa-user'></i></span>
               </div>
-              <input type='text' className='form-control' name='name' placeholder='Name' value={this.state.value} onChange = {this.handleNameChange}/>
+              <input type='text' className='form-control' placeholder='Name' value={this.state.value} onChange = {this.handleChange}/>
             </div>
 
             <div className='input-group mb-3'>
               <div className='input-group-prepend'>
                 <span className='input-group-text'><i className='far fa-list-alt'></i></span>
               </div>
-              <input type='text' className='form-control' name='course' placeholder='Course' value={this.state.value} onChange ={this.handleCourseChange} />
+              <input type='text' className='form-control' placeholder='Course' value={this.state.value} onChange ={this.handleChange} />
             </div>
 
             <div className='input-group mb-3'>
               <div className='input-group-prepend'>
                 <span className='input-group-text'><i className='fas fa-graduation-cap'></i></span>
               </div>
-              <input type='text' className='form-control' name='grade' placeholder='Grade' value={this.state.value} onChange ={this.handleGradeChange}/>
+              <input type='text' className='form-control' placeholder='Grade' value={this.state.value} onChange ={this.handleChange}/>
             </div>
 
-            <button type='submit' className='addButton btn mr-3'>Add</button>
+            <button onClick={this.handleSubmit}type='submit' className='addButton btn mr-3'>Add</button>
             <button type='reset' className='resetButton btn' >Cancel</button>
-
           </div>
         </form>
 

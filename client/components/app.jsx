@@ -24,20 +24,6 @@ class App extends React.Component {
             })
     }
 
-    addNewGrade(newGrade) {
-        fetch('api/grades',{
-            method: 'POST',
-            headers: { 'Content-type': 'application/json' },
-            body: JSON.stringify(newGrade)
-        })
-            .then(res => res.json())
-                .then(data => {
-                    this.setState({
-                        grades: this.state.grades.concat([data])
-                    })
-                })
-    }
-
     getGradeAverage() {
         if (this.state.grades.length < 0) {
             return '0 %'
@@ -50,12 +36,28 @@ class App extends React.Component {
         }
     }
 
+    addNewGrade(newGrade) {
+        fetch('api/grades',{
+            method: 'POST',
+            headers: { 'Content-type': 'application/json' },
+            body: JSON.stringify(newGrade)
+        })
+            .then(res => res.json())
+                .then(grade => {
+                    this.setState({
+                        grades: this.state.grades.concat(grade)
+                    })
+                })
+                .catch(err => {
+                    console.error(err);
+                })
+    }
 
   render() {
     return (
     <div className= 'container'>
         <Header average = {this.getGradeAverage()}/>
-        <div className = 'gradeTable'>
+        <div className = 'componentContainer mt-4'>
             <GradeTable grades={this.state.grades}/>
             <GradeForm addGrade = {this.addNewGrade}/>
         </div>

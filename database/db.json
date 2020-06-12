@@ -19,64 +19,28 @@
       "grade": 100
     },
     {
+      "name": "Mason Keiser",
+      "course": "learningfuze",
+      "grade": 100,
       "id": 33
     },
     {
-      "id": 34
-    },
-    {
+      "name": "Rachel Ray",
+      "course": "Cooking",
+      "grade": 42,
       "id": 35
     },
     {
+      "name": "Derek Jeter",
+      "course": "Cleaning",
+      "grade": 88,
       "id": 36
     },
     {
+      "name": "Yung Wheezy",
+      "course": "Pimpin",
+      "grade": 100,
       "id": 37
-    },
-    {
-      "id": 38
-    },
-    {
-      "id": 39
-    },
-    {
-      "id": 40
-    },
-    {
-      "name": "jose",
-      "course": "web dev",
-      "grade": 80,
-      "id": 41
-    },
-    {
-      "name": "",
-      "course": "",
-      "grade": null,
-      "id": 42
-    },
-    {
-      "name": "99",
-      "course": "Mason Keiser",
-      "grade": null,
-      "id": 43
-    },
-    {
-      "name": "99",
-      "course": "",
-      "grade": null,
-      "id": 44
-    },
-    {
-      "name": "",
-      "course": "",
-      "grade": null,
-      "id": 45
-    },
-    {
-      "name": "",
-      "course": "",
-      "grade": null,
-      "id": 46
     }
   ]
 }
