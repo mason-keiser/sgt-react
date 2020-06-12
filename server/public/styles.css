@@ -63,3 +63,8 @@ table{
     color: white;
     margin-top: 30px;
  }
+
+ .deleteButton{
+    background-image: linear-gradient(to right, black ,red);
+    color: white;
+ }

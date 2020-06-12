@@ -13,9 +13,12 @@ export default class GradeForm extends React.Component {
         this.handleReset = this.handleReset.bind(this);
     }
 
-    handleChange(event) {
-      this.setState({ [event.target.name]: event.target.value });
-    }
+    
+  handleChange(event) {
+    this.setState({
+      [event.target.name]: event.target.value
+    });
+  }
 
     handleReset(event) {
       this.setState({

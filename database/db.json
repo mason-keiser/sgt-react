@@ -1,46 +1,10 @@
 {
   "grades": [
     {
-      "id": 5,
-      "name": "Kyle Simpson",
-      "course": "JavaScript",
-      "grade": 100
-    },
-    {
-      "id": 12,
-      "name": "Brendan Eich",
-      "course": "JavaScript",
-      "grade": 100
-    },
-    {
-      "id": 32,
-      "name": "Douglas Crockford",
-      "course": "JavaScript",
-      "grade": 100
-    },
-    {
       "name": "Mason Keiser",
-      "course": "learningfuze",
-      "grade": 100,
-      "id": 33
-    },
-    {
-      "name": "Rachel Ray",
-      "course": "Cooking",
-      "grade": 42,
-      "id": 35
-    },
-    {
-      "name": "Derek Jeter",
-      "course": "Cleaning",
-      "grade": 88,
-      "id": 36
-    },
-    {
-      "name": "Yung Wheezy",
-      "course": "Pimpin",
-      "grade": 100,
-      "id": 37
+      "course": "Poli Sci",
+      "grade": 99,
+      "id": 3
     }
   ]
 }

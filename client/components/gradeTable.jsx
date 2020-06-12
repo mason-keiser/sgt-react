@@ -10,6 +10,7 @@ class GradeTable extends React.Component {
               <th>Name</th>
               <th>Course</th>
               <th>Grade</th>
+              <th>Operations</th>
             </tr>
           </thead>
           <tbody>
@@ -20,6 +21,7 @@ class GradeTable extends React.Component {
                         grade={grade}
                         course={grade.course}
                         name={grade.name}
+                        deleteGrade = {this.props.deleteGrade}
                       />)
                   })
               }
