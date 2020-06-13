@@ -74,6 +74,7 @@ class App extends React.Component {
             <GradeTable grades={this.state.grades} deleteGrade={this.deleteGrade}/>
             <GradeForm addGrade = {this.addNewGrade}/>
         </div>
+        <div className='footer'></div>
     </div>
     );
   }

@@ -1,10 +1,46 @@
 {
   "grades": [
     {
-      "name": "Mason Keiser",
-      "course": "Poli Sci",
-      "grade": 99,
+      "name": "Kyle Simpson",
+      "course": "JavaScript",
+      "grade": 100,
+      "id": 1
+    },
+    {
+      "name": "Brendan Eich",
+      "course": "JavaScript",
+      "grade": 100,
+      "id": 2
+    },
+    {
+      "name": "Douglas Crockford",
+      "course": "JavaScript",
+      "grade": 100,
       "id": 3
+    },
+    {
+      "name": "Mason Keiser",
+      "course": "Web Dev",
+      "grade": 89,
+      "id": 4
+    },
+    {
+      "name": "Jim",
+      "course": "Surfing",
+      "grade": 45,
+      "id": 5
+    },
+    {
+      "name": "Goose",
+      "course": "Surfing",
+      "grade": 78,
+      "id": 6
+    },
+    {
+      "name": "Mason Keiser",
+      "course": "Surfing",
+      "grade": 100,
+      "id": 7
     }
   ]
 }

@@ -4,7 +4,7 @@
     justify-content: space-evenly;
     align-items: baseline;
     border: black 3px solid;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(189, 182, 182));
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(172, 167, 167));
     box-shadow: -5px 5px 8px grey;
     color: black;
 }
@@ -15,8 +15,9 @@ h1 {
 }
 
 .average{
-    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(165, 160, 160));
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(221, 217, 217));
     margin-left: 20px;
+    padding: 3px 3px 3px 3px;
     border: black 3px solid;
     color: black;
 }
@@ -38,7 +39,7 @@ table{
      display: flex;
      flex-direction: row;
      justify-content: space-between;
-     align-items: top;
+     align-items: center;
  }
 
  .formContainer {
@@ -48,7 +49,7 @@ table{
      border: 3px solid black;
      box-shadow: -6px 6px 8px grey;
      padding: 30px 20px 4px 20px;
-     background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(189, 182, 182));
+     background-image: linear-gradient(to top, rgb(163, 158, 158), rgb(255, 0, 0,0));
  }
 
  .addButton{
@@ -67,4 +68,14 @@ table{
  .deleteButton{
     background-image: linear-gradient(to right, black ,red);
     color: white;
+ }
+
+ .footer{
+    border: black 3px solid;
+    margin-top: 20px;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(172, 167, 167));
+    box-shadow: -5px 5px 8px grey;
+    color: black;
+    height: 84px;
+    width: 1110px;
  }
