@@ -52,10 +52,15 @@ table{
      background-image: linear-gradient(to top, rgb(163, 158, 158), rgb(255, 0, 0,0));
  }
 
+ .buttonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ }
+
  .addButton{
     background-image: linear-gradient(to right,green , blue);
     color: white;
-    margin-left: 25px;
     margin-top: 30px;
  }
 
