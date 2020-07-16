@@ -4,24 +4,39 @@ export default class GradeForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            grade: '',
-            course: '',
-            name: ''
+            grade: null,
+            course: null,
+            name: null
         }
-        this.handleChange = this.handleChange.bind(this);
+        this.handleNewName = this.handleNewName.bind(this);
+        this.handleNewCourse = this.handleNewCourse.bind(this);
+        this.handleNewGrade = this.handleNewGrade.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleReset = this.handleReset.bind(this);
     }
 
-    handleChange(event) {
-      this.setState({ [event.target.name]: event.target.value });
+    handleNewName() {
+      this.setState({
+        name: event.target.value
+      });
     }
-
+  
+    handleNewCourse() {
+      this.setState({
+        course: event.target.value
+      });
+    }
+  
+    handleNewGrade() {
+      this.setState({
+        grade: event.target.value
+      });
+    }
+  
     handleReset(event) {
       this.setState({
-        name: '',
-        course: '',
-        grade: ''
+        name: null,
+        course: null,
+        grade: null
       });
     }
   
@@ -47,25 +62,26 @@ export default class GradeForm extends React.Component {
               <div className='input-group-prepend'>
                 <span className ='input-group-text'><i className='fas fa-user'></i></span>
               </div>
-              <input type='text' className='form-control' placeholder='Name' value={this.state.value} onChange = {this.handleChange}/>
+              <input type='text' className='form-control' placeholder='Name' value={this.state.value} onChange = {this.handleNewName}/>
             </div>
 
             <div className='input-group mb-3'>
               <div className='input-group-prepend'>
                 <span className='input-group-text'><i className='far fa-list-alt'></i></span>
               </div>
-              <input type='text' className='form-control' placeholder='Course' value={this.state.value} onChange ={this.handleChange} />
+              <input type='text' className='form-control' placeholder='Course' value={this.state.value} onChange ={this.handleNewCourse} />
             </div>
 
             <div className='input-group mb-3'>
               <div className='input-group-prepend'>
                 <span className='input-group-text'><i className='fas fa-graduation-cap'></i></span>
               </div>
-              <input type='text' className='form-control' placeholder='Grade' value={this.state.value} onChange ={this.handleChange}/>
+              <input type='text' className='form-control' placeholder='Grade' value={this.state.value} onChange ={this.handleNewGrade}/>
             </div>
-
-            <button onClick={this.handleSubmit}type='submit' className='addButton btn mr-3'>Add</button>
-            <button type='reset' className='resetButton btn' >Cancel</button>
+            <div className='buttonContainer'>
+              <button onClick={this.handleSubmit}type='submit' className='addButton btn'>Add</button>
+              <button type='reset' className='resetButton btn' >Clear</button>
+            </div>
           </div>
         </form>
 

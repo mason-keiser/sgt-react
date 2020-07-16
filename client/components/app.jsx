@@ -11,6 +11,7 @@ class App extends React.Component {
         };
         this.getGradeAverage = this.getGradeAverage.bind(this);
         this.addNewGrade = this.addNewGrade.bind(this);
+        this.deleteGrade = this.deleteGrade.bind(this);
     }
 
     componentDidMount () {
@@ -53,14 +54,27 @@ class App extends React.Component {
                 })
     }
 
+
+    deleteGrade(gradeId) {
+        fetch('/api/grades/' + gradeId, {
+            method: 'DELETE',
+            headers: { 'Content-type': 'application/json'}
+        })
+            .then(this.setState(state => {
+                return { grades: state.grades.filter(grade => Number(grade.id) !== gradeId) };
+        }))
+            .catch(error => console.error(error));
+    }
+
   render() {
     return (
     <div className= 'container'>
         <Header average = {this.getGradeAverage()}/>
         <div className = 'componentContainer mt-4'>
-            <GradeTable grades={this.state.grades}/>
+            <GradeTable grades={this.state.grades} deleteGrade={this.deleteGrade}/>
             <GradeForm addGrade = {this.addNewGrade}/>
         </div>
+        <div className='footer'></div>
     </div>
     );
   }
