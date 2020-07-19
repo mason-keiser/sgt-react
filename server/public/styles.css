@@ -81,6 +81,6 @@ table{
     background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(172, 167, 167));
     box-shadow: -5px 5px 8px grey;
     color: black;
-    height: 84px;
-    width: 1110px;
+    height: 100px;
+    float: bottom;
  }
