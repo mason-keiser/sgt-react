@@ -68,9 +68,9 @@ class App extends React.Component {
 
   render() {
     return (
-    <div className= 'ml-4 mr-4'>
+    <div className= 'ml-2 mr-2'>
         <Header average = {this.getGradeAverage()}/>
-        <div className = 'componentContainer mt-4'>
+        <div className = 'componentContainer mt-2 ml-5 mr-5'>
             <GradeTable grades={this.state.grades} deleteGrade={this.deleteGrade}/>
             <GradeForm addGrade = {this.addNewGrade}/>
         </div>
