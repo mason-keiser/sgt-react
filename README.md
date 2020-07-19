@@ -3,6 +3,7 @@ The Student Grade Table is a dynamic web application for teachers who want to re
 # Technologies Used
 * React.js
 * Node.js
+* PostgreSQL
 * Express
 * Webpack 4
 * HTML 5
