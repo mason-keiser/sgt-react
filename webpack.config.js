@@ -30,12 +30,12 @@ module.exports = {
   devtool: 'source-map',
   devServer: {
     host: '0.0.0.0',
-    port: process.env.DEV_SERVER_PORT,
+    port: 3004,
     contentBase: publicPath,
     watchContentBase: true,
     stats: 'minimal',
     proxy: {
-      '/api': `http://localhost:${process.env.PORT}`
+      '/api': `http://localhost:3001`
     }
   }
 };
