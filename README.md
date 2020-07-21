@@ -21,7 +21,6 @@ Link: https://grade-table.masonkeiser.com/
 ## System Requirements
 * Node.js 10 or higher
 * NPM 6 or higher
-* PostgreSQL 10 or higher
 # Getting Started
 1. Clone this repository:
 ```
@@ -34,22 +33,6 @@ cd sgt-react
 3. Install all dependencies with NPM:
 ```
 npm install
-```
-4. Start postgreSQL server in terminal:
-```
-sudo service posgresql start
-``` 
-5. Create database that you will be using for the site:
-```
-createdb studentGradeTable
-```
-6. Import database to PostgreSQL:
-```
-npm run db:import
-```
-7. Open a second terminal; navigate to project directory, start pgweb:
-```
-pgweb --db=studentGradeTable
 ```
 8. Start the project (in another terminal). You can view the application by opening http://localhost:3000 in your browser:
 ```
