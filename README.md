@@ -38,3 +38,5 @@ npm install
 ```
 npm run dev
 ```
+# Preview
+![snapshot](server/public/images/sgt.png)
