@@ -1,6 +1,6 @@
 # sgt-react
 The Student Grade Table is a dynamic web application for teachers who want to record the grades of their students.
-Link: https://grade-table.masonkeiser.com/
+* Link: https://grade-table.masonkeiser.com/
 # Technologies Used
 * React.js
 * Node.js
